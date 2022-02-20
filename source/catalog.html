@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Gllacy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body container">
   <header class="page-header">
     <a href="index.html">
       <img class="main-logo" src="" alt="">
@@ -14,7 +15,7 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link">Каталог</a>
+          <a class="navigation__link navigation__link--current">Каталог</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="">Доставка и оплата</a>
@@ -23,20 +24,20 @@
           <a class="navigation__link" href="">О компании</a>
         </li>
       </ul>
-      <ul class="navigation__user-nav-list">
-        <li class="navigation__user-nav-item">
-          <a class="navigation__user-nav-link" href="tel:+78005558628">+7 800 555-86-28</a>
+      <ul class="navigation__user-list">
+        <li class="navigation__user-item">
+          <a class="navigation__user-link navigation__user-link--tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
-        <li class="navigation__user-nav-item">
-          <a class="navigation__user-nav-link" href="#">
+        <li class="navigation__user-item">
+          <a class="navigation__user-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation__user-nav-item">
-          <a class="navigation__user-nav-link" href="#">Вход</a>
+        <li class="navigation__user-item">
+          <a class="navigation__user-link" href="#">Вход</a>
         </li>
-        <li class="navigation__user-nav-item">
-          <a class="navigation__user-nav-link" href="#">Пусто</a>
+        <li class="navigation__user-item">
+          <a class="navigation__user-link" href="#">Пусто</a>
         </li>
       </ul>
     </nav>
@@ -58,7 +59,7 @@
         </ul>
         <h2>Сливочное мороженое</h2>
       </header>
-        <form action="">
+        <form class="sorting-form" action="" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
             <select name="" id="">
@@ -138,7 +139,7 @@
       </section>
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
-        <ul class="products__list">
+        <ul class="products-list">
           <li class="products__item">
             <h3>Малинка</h3>
             <img class="products__img" src="" alt="">
@@ -296,7 +297,7 @@
     </ul>
     <ul class="page-footer__nav-list">
       <li class="page-footer__nav-item">
-        <a class="page-footer__nav-link" href="#">Для поставщиков</a>
+        <a class="page-footer__nav-link page-footer__nav-link--special" href="#">Для поставщиков</a>
       </li>
       <li class="page-footer__nav-item">
         <a class="page-footer__nav-link" href="#">Наши документы</a>
