@@ -5,9 +5,48 @@
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  width: 810px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 24px;
+}
+
+.sorting-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .sorting-form label {
   font-weight: normal;
 }
 
+.sorting-form__popular {
+  grid-column: 1/2;
+}
+
+.sorting-form__price {
+  grid-column: 2/3;
+}
+
+.sorting-form__fat-content {
+  grid-column: 3/5;
+}
+
+.sorting-form__fat-content-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting-form__filling {
+  grid-column: 1/4;
+}
+
+.sorting-form__filling-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
